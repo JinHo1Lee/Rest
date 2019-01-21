@@ -14,7 +14,6 @@ public :
 
 	static size_t AckResPrint(void *ptr, size_t size, size_t count, void *stream);
 	static int OnDebug(CURL *, curl_infotype itype, char * pData, size_t size, void *);
-	string jsonToVar(Json::Value root, string key);
 
 	int init();
 	int connectSocket();
