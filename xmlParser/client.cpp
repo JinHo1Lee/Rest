@@ -9,13 +9,13 @@ int RestClient::OnDebug(CURL *, curl_infotype itype, char * pData, size_t size, 
     if (itype == CURLINFO_TEXT) {
         printf("[TEXT]%s\n", pData);
     } else if (itype == CURLINFO_HEADER_IN) {
-        cout << "[emay] sent in header[" << pData << "]" << endl;
+        cout << "sent in header[" << pData << "]" << endl;
     } else if (itype == CURLINFO_DATA_IN) {
-        cout << "[emay] sent in data[" << pData << "]" << endl;
+        cout << "sent in data[" << pData << "]" << endl;
     } else if (itype == CURLINFO_HEADER_OUT) {
-        cout << "[emay] sent out header[" << pData << "]" << endl;
+        cout << "sent out header[" << pData << "]" << endl;
     } else if (itype == CURLINFO_DATA_OUT) {
-        cout << "[emay] sent out data[" << pData << "]" << endl;
+        cout << "sent out data[" << pData << "]" << endl;
     }
     return 0;
 }
